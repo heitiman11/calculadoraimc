@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Calculadora IMC</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="content telaInicio">
+      <img src="assets/images/logotipo.jpg" alt="logo tipo" width="100" class="logo">
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#saude">Saúde</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <div class="principal content">
+      <div class="title">
+        <h1>A sua saúde em <br>primeiro lugar</h1>
+        <p>Por isso ajudamos você a <br>procurar e manter o peso ideal! </p>
+      </div>
+      <div class="IMC">
+        <h2>Calcule seu IMC: </h2>
+
+        <form action="" method="get" class="imcAction">
+          <div class="area-altura">
+            <p>Qual sua altura? </p>
+            <input type="number" name="altura" id="altura" placeholder="Ex: 1,82">
+            <span>Metros</span>
+          </div>
+          <div class="area-peso">
+            <p>Qual seu peso? </p>
+            <input type="number" name="peso" id="peso" placeholder="Ex: 73">
+            <span>Kg</span>
+          </div>
+          <div class="area-button">
+            <input type="button" value="Calcular" name="btnCalcular" id="calcular">
+          </div>
+        </form>
+        <div class="resultado" id="resultado"></div>
+      </div>
+    </div>
+  </main>
+
+  <section class="section-saude" id="saude">
+    <div class="content saude">
+      <div class="text">
+        <h2>Qual a importância do IMC?</h2>
+        <p>Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal, conhecido pela sigla IMC, é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.
+          Quando o índice de massa corporal recomendado está excedido, é porque a pessoa pode estar numa situação de sobrepeso com tendência à obesidade ou já ter a obesidade. Portanto, o calculo pode ser feito em casa, mas, dependendo do resultado, é importante procurar um médico para avaliar o grau de sobrepeso ou obesidade. Ou o extremo oposto disso. Se o índice estiver muito abaixo da normalidade para o homem e para a mulher indica que a pessoa pode estar no estado de desnutrição, de perda expressiva de massa. E assim como a obesidade, também existem graus de magreza.</p>
+      </div>
+      <div class="classificações">
+        <ul class="imc-classificações">
+          <li>Menor que 16 - Magreza grave</li>
+          <li>16 a menor que 17 - Magreza moderada</li>
+          <li>17 a menor que 18,5 - Magreza leve</li>
+          <li>18,5 a menor que 25 - Saudável</li>
+          <li>25 a menor que 30 - Sobrepeso</li>
+          <li>30 a menor que 35 - Obesidade Grau I</li>
+          <li>35 a menor que 40 - Obesidade Grau II (considerada severa)</li>
+          <li>Maior que 40 - Obesidade Grau III (considerada mórbida)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer #contato>
+    <div class="content">
+      <div class="final">
+        <div class="contato">
+          <ul class="informaçoes-principais">
+            <li>51 99626-6214</li>
+            <li>heitimandev@gmail.com</li>
+            <li>Guaíba-RS</li>
+          </ul>
+          <ul class="socials">
+            <li><a href="wa.me/5551996266214"><img src="assets/images/whatsapp.svg" alt="WhatsApp"></a></li>
+            <li><a href="https://www.instagram.com/heeitiman/"><img src="assets/images/instagram.svg" alt="Instagram"></a></li>
+            <li><a href="https://github.com/heitiman11"><img src="assets/images/github.svg" alt="GitHub"></a></li>
+            <li><a href="https://www.linkedin.com/in/gabriel-rodrigues-heitiman-80aaa9224/"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a></li>
+          </ul>
+          <p class="credit"><a target="_blank" href="https://icons8.com/icon/16713/whatsapp">Whatsapp</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#saude">Saude</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="">Política de privacidade</a></li>
+            <li><a href="">Termos e condições</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="copy">
+        <p>Gabriel Heitiman. Todos os direitos reservados ©</p>
+      </div>
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
