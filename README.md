@@ -1,6 +1,6 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/85481205/189456160-5ecf303e-edff-4057-8ed8-5f589357285f.jpg"/></p>
 
-<p align="center"><img src="https://img.shields.io/badge/Vers%C3%A3o-1.0-blue"/> <img src="https://img.shields.io/badge/Status-em%20desenvolvimento-blu"</p>
+<p align="center"><img src="https://img.shields.io/badge/Vers%C3%A3o-1.0-blue"/> <img src="https://img.shields.io/badge/Status-em%20desenvolvimento-blu"/> <img src="https://img.shields.io/badge/License-MIT-blue"/></p>
 
 <p>Uma aplicação JavaScript para estudos, é Calculadora IMC que te retorna o resultado do seu índice de massa corporal calculando com base em seu peso e sua altura. Visual FrontEnd básico apenas para tornar melhor a leitura e o uso da aplicação. </p>
 
@@ -27,3 +27,7 @@
 
 | [<img src="https://user-images.githubusercontent.com/85481205/189459752-211d7fc6-f6b0-488b-aa9a-471bf971fe0a.jpeg" width=115><br><sub>Gabriel Heitiman</sub>](https://github.com/heitiman11) |  
 | :---: |
+
+## :page_facing_up: Licença
+
+Calculadora IMC é <a href="https://github.com/heitiman11/calculadoraimc/blob/main/LICENSE.txt">licenciado pelo MIT.</a>
