@@ -61,21 +61,32 @@
   border-radius: var(--bd-radius);
 }
 
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile div {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+  background-color: var(--primmary-color);
+  border-radius: 5px;
+}
+
 /*  MAIN  - IMC*/
 
 main {
   background-image: url("../images/alimentação.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100vw;
-  height: calc(100vh - 65px);
 }
 
 .principal {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 100%;
   align-items: center;
+  gap: 100px;
+  padding: 140px;
 }
 
 h1 {
@@ -102,7 +113,6 @@ h1:after {
   max-width: 450px;
   padding: 20px;
   background-color: var(--white);
-  grid-column: 2;
   justify-self: end;
   border-radius: var(--bd-radius);
 }
@@ -114,7 +124,6 @@ h1:after {
 .imcAction {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 
 .area-altura,
@@ -142,18 +151,23 @@ input[type="number"] {
   cursor: pointer;
 }
 
+.resultado {
+  max-width: 30ch;
+}
+
 /* SECTION - SAÚDE */
 
 section {
   background-image: url(../images/background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  padding: 10px;
 }
 
 .saude {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: center;
   align-items: center;
 }
 
@@ -164,7 +178,6 @@ section {
 }
 
 .text h2 {
-  padding: 50px;
   color: var(--black);
   font-size: 1.5rem;
 }
@@ -174,6 +187,7 @@ section {
   font-size: 1.1rem;
   letter-spacing: 1.3;
   line-height: 1.4;
+  margin: 20px;
 }
 
 .classificações {
@@ -237,4 +251,99 @@ footer {
   text-align: center;
   padding: 10px;
   color: var(--color-font-4);
+}
+
+@media (max-width: 1000px) {
+  .principal {
+    justify-content: space-between;
+  }
+
+  .IMC {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    margin: 20px;
+  }
+
+  .principal {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .title {
+    background-color: var(--white);
+    opacity: 0.8;
+    margin: 25px;
+    border-radius: var(--bd-radius);
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+  }
+
+  .title p {
+    font-size: 1.1rem;
+    font-weight: bolder;
+  }
+
+  h1,
+  .title p {
+    color: var(--black);
+    margin: 20px;
+  }
+
+  .IMC {
+    justify-self: center;
+    margin: 20px;
+  }
+
+  section {
+    height: 100%;
+  }
+
+  .text {
+    background-color: var(--white);
+    margin: 10px;
+    border-radius: var(--bd-radius);
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text p {
+    padding: 20px;
+  }
+
+  .text h2 {
+    padding: 20px;
+  }
+
+  .saude {
+    grid-template-columns: 1fr;
+  }
+
+  .classificações {
+    justify-content: center;
+  }
+
+  .imc-classificações li {
+    color: var(--color-font-4);
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
 }
